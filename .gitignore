@@ -1,0 +1,43 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.env
+
+node_modules
+dist
+dist-ssr
+*.local
+venv
+venv/*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vercel
+.env
+.env.local
+
+# Large media files (except product demo)
+*.mov
+*.avi
+docs/**/*.mp4
+
+# Extension releases
+*.zip
+
+# Claude Code configuration
+.claude
+CLAUDE.md
+.mcp.json

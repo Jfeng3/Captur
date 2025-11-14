@@ -1,0 +1,336 @@
+{
+  "extensionMetadata": {
+    "name": "Captur",
+    "version": "1.0.1",
+    "manifestVersion": 3
+  },
+
+  "productDetails": {
+    "shortDescription": "Turn your favorite YouTube videos, articles, and blogs into systematic vocabulary learning. Click to save as flashcard.",
+    "detailedDescription": "Build vocabulary from content you love.\n\nCaptur helps ESL students and professionals build vocabulary naturally—turn your favorite YouTube videos, articles, and blogs into systematic vocabulary learning with zero manual effort.\n\n**How It Works:**\n\n1. **Hover-to-Translate - Zero-Click Vocabulary Lookup**\n   - Select any word or phrase on any webpage\n   - Small teal dot appears at the end of selection\n   - Hover over dot → instant inline translation with styled button\n   - Example: \"opportunities\" becomes **opportunities** _(机会)_\n   - 30x faster than traditional dictionary lookup (0.5s vs 15-20s)\n   - Zero clicks, zero context switching\n\n2. **One-Click Flashcard Save**\n   - Click any vocabulary button (yellow highlight + translation)\n   - Button turns green with ✓ checkmark → word saved to flashcards\n   - Takes 0.5 seconds (600x faster than manual card creation)\n   - Green checkmark prevents duplicate saves\n   - All flashcards sync to captur.academy with spaced repetition\n\n3. **YouTube Transcript with Auto-Generated Vocabulary**\n   - Click \"📝 Key Takeaways\" on any YouTube video\n   - Side-by-side view: video + scrolling transcript\n   - AI auto-detects 10-15 difficult words, highlights them in transcript\n   - Click any highlighted word to save as flashcard\n   - Transcript auto-scrolls with video playback\n\n4. **Auto Vocabulary Extraction from Articles**\n   - Click \"📝 Key Takeaways\" while reading any article\n   - AI identifies 10-15 challenging words based on proficiency level\n   - Words highlighted inline as clickable vocabulary buttons\n   - Each button shows: English word + Chinese translation\n   - Click to save as flashcard with source URL\n\n5. **AI Writing Assistant**\n   - Select text and press Shift twice for instant actions\n   - Voice (rephrase), simplify, or generate replies\n   - Replace text directly in editable fields\n   - Perfect for email writing and professional communication\n\n**Perfect For:**\n\n- ESL students preparing for exams (TOEFL, IELTS, GRE) who consume English content daily\n- International professionals who want to expand vocabulary while reading industry content\n- Language learners building fluency through content they enjoy (YouTube, articles, blogs)\n- Anyone who wants to learn English naturally through favorite creators and topics\n\n**Key Features:**\n\n✓ Hover-to-translate: 30x faster than traditional dictionary (0.5s vs 15-20s)\n✓ One-click flashcard save: 600x faster than manual card creation\n✓ Auto vocabulary extraction with Chinese translations\n✓ YouTube transcript with synchronized vocabulary highlights\n✓ AI-powered key takeaways generation from any content\n✓ Double-Shift quick actions: rephrase, translate, simplify, reply\n✓ Visual vocabulary buttons with yellow highlights\n✓ Green checkmark feedback prevents duplicate saves\n✓ Spaced repetition review system\n✓ Works on YouTube, articles, blogs, social media\n✓ Secure sync with web app at captur.academy\n✓ Privacy-focused—only saves what you select\n\n**Why Captur is Different:**\n\nStop wasting time on boring language apps with generic word lists. Learn vocabulary from your favorite YouTubers, tech blogs, hobby content, topics you're passionate about—content you actually enjoy.\n\nTraditional flashcard apps (Anki, Quizlet) require 3-5 minutes of manual card creation per word. Language apps (Duolingo, Babbel) force you through generic lessons instead of letting you learn from content you love.\n\nCaptur captures vocabulary while you consume content you're already watching and reading. Hover to translate in 0.5 seconds. Click to save. Words appear inline with yellow highlights and translations. Green checkmarks show what's saved.\n\n**Not Just Professional Content:**\n\nLearn English from ANY content you love:\n- Favorite YouTube creators and channels\n- Tech articles and programming blogs\n- Business news and industry publications\n- Hobby blogs (travel, cooking, sports, gaming)\n- Entertainment content and social media\n- Topics you're passionate about\n\nVocabulary matches YOUR interests, not generic textbook lists.\n\nStart building vocabulary from content you love. Try it free.\n\n**Privacy & Data Protection:**\n- **Zero Tracking**: No browsing history, no personal information collection\n- **Explicit Consent Only**: Data collected only when you click \"Save\" or \"Key Takeaways\"\n- **What We Collect**: Selected text, page content (Key Takeaways only), page URL, timestamp\n- **What We DON'T Collect**: Browsing history, keystrokes, passwords, cookies, personal data\n- **AI Features**: Text sent to OpenAI only when you use Key Takeaways/rephrase buttons\n- **OpenAI Policy**: Data not stored for training (per API usage terms)\n- **Your Control**: Delete vocabulary anytime at captur.academy, uninstall extension anytime\n- **Secure**: HTTPS encryption for all data transmission\n- **Transparent**: UI clearly indicates when data will be collected\n- Full privacy policy at captur.academy/privacy\n\n**Support:**\nVisit captur.academy or email support@captur.academy",
+
+    "primaryCategory": "Productivity",
+    "secondaryCategory": "Education",
+    "language": "English (United States)"
+  },
+
+  "graphicAssets": {
+    "storeIcon": {
+      "required": true,
+      "dimensions": "128x128",
+      "format": "PNG or JPEG",
+      "location": "icon-128.png",
+      "notes": "Must be included in extension package"
+    },
+
+    "screenshots": {
+      "required": true,
+      "minimumCount": 1,
+      "maximumCount": 5,
+      "dimensions": "1280x800 or 640x400",
+      "format": "PNG or JPEG",
+      "screenshots": [
+        {
+          "number": 1,
+          "title": "Hover-to-Translate - Instant Inline Translation",
+          "description": "Show article with vocabulary word 'universal child care' highlighted with inline Chinese translation (普惠托儿服务)",
+          "caption": "Select any word → hover over teal dot → instant inline translation in 0.5 seconds. 30x faster than dictionary lookup.",
+          "file": "hover-translate-demo.png",
+          "location": "/public/hover-translate-demo.png",
+          "status": "ready"
+        },
+        {
+          "number": 2,
+          "title": "One-Click Flashcard Save with Spaced Repetition",
+          "description": "Show vocabulary flashcard interface displaying 'industry-specific AI solutions' with Chinese translation, example sentence, and SRS review buttons (Again, Hard, Good, Easy)",
+          "caption": "Click vocabulary button → word saved to flashcards instantly. Review with spaced repetition (1d, 3d, 1w, 2w, 1m) for 80%+ retention.",
+          "file": "flashcard-save-demo.png",
+          "location": "/public/flashcard-save-demo.png",
+          "status": "ready"
+        },
+        {
+          "number": 3,
+          "title": "YouTube Transcript with Auto-Generated Vocabulary",
+          "description": "Show YouTube video (Hagrid) on left, synchronized scrolling transcript on right with Auto and Copy buttons, current sentence highlighted",
+          "caption": "Watch YouTube while reading transcript with synchronized highlighting. Click 'Key Takeaways' to extract difficult vocabulary.",
+          "file": "youtube-transcript-demo.png",
+          "location": "/public/youtube-transcript-demo.png",
+          "status": "ready"
+        },
+        {
+          "number": 4,
+          "title": "Sticky Notes on Any Webpage",
+          "description": "Show yellow sticky note overlay on article with 'Note' header, text input placeholder suggesting to type @ to insert takeaways/sentences",
+          "caption": "Attach notes, reflections, and key takeaways to any webpage. Return anytime to review in original context.",
+          "file": "sticky-note-demo.png",
+          "location": "/public/sticky-note-demo.png",
+          "status": "ready"
+        },
+        {
+          "number": 5,
+          "title": "Key Takeaways Panel with Marked Vocabulary",
+          "description": "Show purple Key Takeaways sidebar with extracted vocabulary from article, including difficult terms like 'ambitious', 'implement', 'discourage' with translations",
+          "caption": "AI auto-detects 10-15 challenging words and displays with translations. Click to save as flashcard or reflect on content.",
+          "file": "key-takeaways-demo.png",
+          "location": "/public/ (need to create)",
+          "status": "pending - need screenshot"
+        }
+      ]
+    },
+
+    "promotionalImages": {
+      "smallTile": {
+        "required": false,
+        "dimensions": "440x280",
+        "format": "PNG or JPEG",
+        "description": "Captur logo with tagline: Build Vocabulary from Content You Love"
+      },
+      "marquee": {
+        "required": false,
+        "dimensions": "1400x560",
+        "format": "PNG or JPEG",
+        "description": "Hero image showing ESL professional using the tool with key benefit"
+      }
+    },
+
+    "youtubeVideoUrl": {
+      "required": false,
+      "url": "",
+      "notes": "Optional promotional video"
+    }
+  },
+
+  "websitesAndSupport": {
+    "officialWebsite": "https://www.captur.academy/",
+    "homepageUrl": "https://www.captur.academy/",
+    "supportUrl": "https://www.captur.academy/",
+    "supportEmail": "support@captur.academy"
+  },
+
+  "privacyPractices": {
+    "singlePurpose": {
+      "description": "Vocabulary learning tool that captures words from web content and provides AI-powered language assistance."
+    },
+
+    "permissionJustifications": {
+      "storage": {
+        "permission": "storage",
+        "justification": "Store user preferences and extension settings locally to maintain user configuration across browser sessions."
+      },
+      "activeTab": {
+        "permission": "activeTab",
+        "justification": "Access the current tab's content only when user explicitly saves selected text, generates takeaways, or uses AI writing features. Required to capture user-selected text and page content."
+      },
+      "contextMenus": {
+        "permission": "contextMenus",
+        "justification": "Add \"Save with Captur\" option to right-click context menu for quick access to save functionality."
+      },
+      "notifications": {
+        "permission": "notifications",
+        "justification": "Show success/error notifications when saving vocabulary to provide immediate user feedback."
+      },
+      "scripting": {
+        "permission": "scripting",
+        "justification": "Required to inject the floating widget, AI writing assistant tooltip, and key takeaways interface into web pages. Only executes when user interacts with extension features."
+      }
+    },
+
+    "hostPermissions": {
+      "https://www.captur.academy/*": {
+        "host": "https://www.captur.academy/*",
+        "justification": "Required to send saved vocabulary notes to the user's Captur account via secure API. All data transmission uses HTTPS and only occurs when user explicitly saves selected text."
+      }
+    },
+
+    "contentScripts": {
+      "matches": "<all_urls>",
+      "justification": "Content script runs on all websites to enable the floating widget, AI writing assistant tooltip, and text selection capture. Script only activates when user explicitly selects text and presses double-shift or clicks the floating widget. No data is collected without explicit user action."
+    },
+
+    "remoteCode": {
+      "executesRemoteCode": false,
+      "justification": "This extension does NOT execute any remote code. All JavaScript is bundled within the extension package. Manifest V3 compliant."
+    },
+
+    "privacyPolicy": {
+      "url": "https://www.captur.academy/privacy",
+      "required": true,
+      "mustInclude": [
+        "What data is collected",
+        "How data is used",
+        "How data is handled/stored",
+        "How data is shared (if applicable)"
+      ]
+    }
+  },
+
+  "dataUsageCertification": {
+    "dataCollected": {
+      "personallyIdentifiableInformation": {
+        "collected": false,
+        "types": []
+      },
+      "healthInformation": {
+        "collected": false
+      },
+      "financialInformation": {
+        "collected": false
+      },
+      "authenticationInformation": {
+        "collected": false,
+        "notes": "Extension connects to user's existing Captur account via website session"
+      },
+      "personalCommunications": {
+        "collected": false
+      },
+      "location": {
+        "collected": false
+      },
+      "webHistory": {
+        "collected": true,
+        "details": "Only the URL of pages where user explicitly saves vocabulary",
+        "purpose": "To provide context for saved vocabulary expressions"
+      },
+      "userActivity": {
+        "collected": true,
+        "details": "Text content explicitly selected and saved by user, or page content when user requests AI-generated takeaways",
+        "purpose": "Core functionality - saving vocabulary expressions for learning and generating educational summaries"
+      },
+      "websiteContent": {
+        "collected": true,
+        "details": "Only user-selected text when explicitly saved, or page content when user clicks 'Generate Key Takeaways'",
+        "purpose": "Vocabulary learning, language education, and AI-powered content summarization"
+      }
+    },
+
+    "dataUsage": {
+      "purpose": "Vocabulary learning, language education, and AI-powered content assistance",
+      "prominentDisclosure": "Users are clearly informed through the extension's UI about data collection: Context menu 'Save with Captur' (indicates text will be saved), Double-shift tooltip with AI buttons (indicates AI processing), '📝 Key Takeaways' floating button (indicates page analysis), Vocabulary buttons with yellow highlights (show what can be saved), Green checkmarks (confirm successful saves), Hover tooltip on teal dot (shows translation). All data collection requires explicit user action. No passive monitoring or automatic data collection occurs.",
+      "thirdPartySharing": true,
+      "thirdPartyDetails": "Selected text and page content are sent to OpenAI API (via our secure backend) only when user explicitly requests AI features like rephrase, translate, or key takeaways generation. Data is used solely for generating AI responses and is not stored by OpenAI for training (per API usage terms).",
+      "dataSale": false,
+      "usageUnrelatedToSinglePurpose": false
+    },
+
+    "certification": {
+      "limitedUseCompliance": "I certify that the use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.",
+      "accurateDisclosure": "All data collection and usage has been accurately disclosed above and in the privacy policy.",
+      "secureTransmission": "All data is transmitted securely using HTTPS to https://www.captur.academy/",
+      "minimumPermissions": "Extension requests only the minimum permissions necessary for its single purpose."
+    }
+  },
+
+  "distributionSettings": {
+    "visibility": {
+      "public": true,
+      "unlisted": false,
+      "notes": "Extension will be publicly discoverable in Chrome Web Store"
+    },
+
+    "pricing": {
+      "free": true,
+      "paid": false,
+      "inAppPurchases": false,
+      "price": null
+    },
+
+    "geographicDistribution": {
+      "allCountries": true,
+      "specificCountries": [],
+      "notes": "Available worldwide"
+    },
+
+    "publishTiming": {
+      "publishImmediately": false,
+      "deferredPublish": true,
+      "notes": "Manually publish after review approval to coordinate with marketing"
+    }
+  },
+
+  "testingInstructions": {
+    "required": false,
+    "instructions": "**Basic Testing:**\n1. Install the extension\n2. Navigate to any webpage with text (e.g., linkedin.com, news article)\n3. Verify floating \"✨ Key Takeaways\" widget appears in bottom-left corner\n\n**Test Save Feature:**\n4. Select any text on the page\n5. Right-click and choose \"Save with Captur\"\n6. Verify notification appears: \"Captured!\"\n\n**Test Double-Shift Tooltip:**\n7. Select text, press Shift twice quickly\n8. Verify tooltip appears with buttons: Voice, Translate, Simplify, Reply, Save\n9. Click any button to test AI features (requires backend API)\n\n**Test Key Takeaways:**\n10. Click the floating \"✨ Key Takeaways\" button\n11. Verify AI-generated takeaways appear in a card\n12. Click a takeaway to jump to relevant section\n\n**Test Popup:**\n13. Click extension icon in toolbar\n14. Test \"Generate Key Takeaways\" button\n15. Test \"Save to Library\" with custom text\n16. Test URL save button (link icon)\n\n**YouTube Test:**\n17. Open any YouTube video\n18. Click extension icon and save URL - verify transcript is fetched (if available)\n\n**Google Docs Test:**\n19. Open a Google Doc\n20. Select text and use double-shift tooltip\n21. Verify text replacement works in Google Docs\n\nNote: Extension requires user to be logged in to captur.academy in the same browser for API authentication."
+  },
+
+  "contentRating": {
+    "matureContent": false,
+    "ageRating": "Everyone"
+  },
+
+  "localization": {
+    "defaultLanguage": "en",
+    "additionalLanguages": [],
+    "localizedDescriptions": {
+      "en": "See detailedDescription above"
+    },
+    "localizedScreenshots": {
+      "en": "Same screenshots for all locales initially"
+    }
+  },
+
+  "keywords": [
+    "vocabulary",
+    "english learning",
+    "esl",
+    "language learning",
+    "flashcards",
+    "spaced repetition",
+    "youtube",
+    "vocabulary builder",
+    "ai writing",
+    "chinese translation",
+    "key takeaways",
+    "hover translate",
+    "reading",
+    "education",
+    "productivity",
+    "anki alternative",
+    "duolingo",
+    "vocab capture",
+    "study tool",
+    "language assistant"
+  ],
+
+  "submissionChecklist": {
+    "manifestV3": true,
+    "storeIconIncluded": true,
+    "screenshotsReady": true,
+    "screenshotsNote": "4 of 5 screenshots ready (hover-translate, flashcard, youtube-transcript, sticky-note). Optional 5th screenshot for Key Takeaways panel pending.",
+    "privacyPolicyHosted": true,
+    "privacyPolicyNote": "Hosted at https://www.captur.academy/privacy - Updated November 5, 2025 with AI features disclosure",
+    "singlePurposeClear": true,
+    "permissionsMinimal": true,
+    "noRemoteCode": true,
+    "testInstructionsProvided": true,
+    "descriptionsComplete": true,
+    "developerAccountRegistered": false,
+    "registrationFeePaid": false,
+    "registrationFeeAmount": "$5 one-time"
+  },
+
+  "notes": {
+    "beforeSubmission": [
+      "✅ Create 4 core screenshots (1280x800 or 640x400) - COMPLETED",
+      "⏸️ Optional: Create 5th screenshot for Key Takeaways panel",
+      "✅ Host privacy policy at https://www.captur.academy/privacy - COMPLETED (Nov 5, 2025)",
+      "❌ Register Chrome Web Store developer account ($5 one-time fee) - PENDING",
+      "⏸️ Consider creating promotional video (optional but recommended)",
+      "⏸️ Test extension thoroughly in different websites",
+      "⏸️ Verify all links in description work correctly"
+    ],
+    "screenshotsCompleted": {
+      "1": "hover-translate-demo.png - Shows 'universal child care' translation",
+      "2": "flashcard-save-demo.png - Shows SRS flashcard with 'industry-specific AI solutions'",
+      "3": "youtube-transcript-demo.png - Shows Hagrid video with synchronized transcript",
+      "4": "sticky-note-demo.png - Shows yellow note overlay on article"
+    },
+    "reviewTime": "Typically 1-3 business days",
+    "commonRejectionReasons": [
+      "Missing or incomplete privacy policy",
+      "Excessive permissions not justified",
+      "Unclear single purpose",
+      "Missing or low-quality screenshots",
+      "Functionality doesn't match description"
+    ]
+  }
+}

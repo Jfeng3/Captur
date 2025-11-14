@@ -1,0 +1,12 @@
+# Test outputs
+*.log
+coverage/
+.nyc_output/
+
+# Test results
+test-results/
+__snapshots__/
+
+# Temporary test files
+*.tmp
+*.temp

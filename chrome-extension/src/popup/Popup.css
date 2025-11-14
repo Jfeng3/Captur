@@ -1,0 +1,142 @@
+/* Popup specific styles */
+.popup-container {
+  min-width: 400px;
+  padding: 24px;
+  background: hsl(210 40% 98%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+}
+
+/* Hero Section - matching style.html */
+.hero-section {
+  text-align: center;
+  padding: 24px 0 32px 0;
+  border-bottom: 1px solid hsl(214.3 31.8% 91.4%);
+  margin-bottom: 24px;
+}
+
+.hero-title {
+  margin: 0 0 8px 0;
+  color: hsl(222.2 47.4% 11.2%);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-balance: balance;
+}
+
+.hero-description {
+  margin: 0;
+  color: hsl(215.4 16.3% 46.9%);
+  font-size: 14px;
+  line-height: 1.5;
+  text-balance: balance;
+}
+
+.selected-text {
+  background: hsl(0 0% 100%);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: hsl(215.4 16.3% 46.9%);
+  border: 1px solid hsl(214.3 31.8% 91.4%);
+}
+
+.title-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  background: hsl(0 0% 100%);
+  box-shadow: inset 0 0 0 1px hsl(214.3 31.8% 91.4%);
+  transition: all 200ms ease;
+}
+
+.title-input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px hsl(217.2 91.2% 59.8%);
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+  background: hsl(0 0% 100%);
+  box-shadow: inset 0 0 0 1px hsl(214.3 31.8% 91.4%);
+  transition: all 200ms ease;
+  min-height: 80px;
+}
+
+.note-textarea:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px hsl(217.2 91.2% 59.8%);
+}
+
+.word-count {
+  font-size: 12px;
+  color: hsl(215.4 16.3% 46.9%);
+  text-align: right;
+  margin: 4px 0 16px 0;
+}
+
+.save-button {
+  width: 100%;
+  padding: 12px 16px;
+  background: hsl(222.2 47.4% 11.2%);
+  color: hsl(0 0% 100%);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.save-button:hover:not(:disabled) {
+  background: hsl(222.2 47.4% 20%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.15);
+}
+
+.save-button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.save-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.message.success {
+  background: hsl(142.1 76.2% 36.3%);
+  color: hsl(0 0% 100%);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+.message.error {
+  background: hsl(0 84.2% 60.2%);
+  color: hsl(0 0% 100%);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}

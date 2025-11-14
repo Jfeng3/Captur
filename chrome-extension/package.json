@@ -1,0 +1,40 @@
+{
+  "name": "captur-extension",
+  "version": "1.0.14",
+  "description": "Chrome extension for Captur",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite build --watch\" \"tsx watch build.mts\"",
+    "dev:vite": "vite build --watch",
+    "dev:content": "tsx watch build.mts",
+    "build": "export BUILD_TIMESTAMP=$(date -u +\"%Y-%m-%dT%H:%M:%SZ\") && tsc && vite build && tsx build.mts && cp dist/public/popup.html dist/popup.html",
+    "build:content": "tsx build.mts",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.15",
+    "@ffmpeg/util": "^0.12.2",
+    "@supabase/supabase-js": "^2.80.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.251",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^9.2.1",
+    "deepmerge": "^4.3.1",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "tsx": "^4.20.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-node-polyfills": "^0.24.0"
+  }
+}
