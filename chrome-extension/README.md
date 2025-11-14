@@ -1,54 +1,105 @@
-# Captur Chrome Extension
+# Captur Chrome Extension - Developer Setup
 
-Capture professional expressions from your reading and build vocabulary in your work context.
+Chrome extension for capturing vocabulary and expressions from web pages.
 
-## Features
+## Prerequisites
 
-- **Quick Capture**: Save selected text as vocabulary notes with one click
-- **Context Menu**: Right-click on selected text and choose "Save with Captur"
-- **Professional Context**: Organize vocabulary by work scenarios (meetings, emails, presentations)
-- **Seamless Integration**: Works with the Captur web app at [captur.academy](https://www.captur.academy/)
+- Node.js 18+ installed
+- pnpm package manager
+- Chrome browser
 
-## Installation from Chrome Web Store
+## Project Structure
 
-1. Visit the [Captur extension page](https://chrome.google.com/webstore) (link coming soon)
-2. Click "Add to Chrome"
-3. Confirm by clicking "Add extension"
-4. The extension icon will appear in your Chrome toolbar
+```
+chrome-extension/
+├── src/
+│   ├── background/         # Service worker (background script)
+│   ├── content/           # Content scripts (runs on web pages)
+│   │   └── matches/all/   # Scripts for all URLs
+│   ├── popup/             # Extension popup UI (React)
+│   ├── lib/               # Shared utilities (auth, supabase)
+│   └── components/        # Shared React components
+├── public/                # Static assets (icons, popup.html)
+├── dist/                  # Build output (gitignored)
+└── manifest.json          # Extension manifest
+```
 
-## Usage
+## Setup
 
-### Saving Vocabulary
+1. **Install dependencies**
+   ```bash
+   cd chrome-extension
+   pnpm install
+   ```
 
-1. **Select text** on any webpage containing expressions you want to learn
-2. **Right-click** and choose "Save with Captur"
-3. Your selection is automatically saved to your Captur account
-4. Access all your saved expressions at [captur.academy](https://www.captur.academy/)
+2. **Build the extension**
+   ```bash
+   pnpm build
+   ```
+   This creates a `dist/` folder with the compiled extension.
 
-### Best Practices
+3. **Load in Chrome**
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode" (toggle in top right)
+   - Click "Load unpacked"
+   - Select the `chrome-extension/dist` folder
 
-- Capture complete expressions, not just single words
-- Save phrases from professional content (LinkedIn, work emails, articles)
-- Organize by context tags when reviewing in the web app
+## Development
 
-## Privacy
+### Watch mode
+```bash
+pnpm dev
+```
+Watches for file changes and rebuilds automatically. You'll need to click "Reload" on `chrome://extensions/` after changes.
 
-Captur respects your privacy:
-- We only access text you explicitly select and save
-- No browsing history is collected
-- No data is transmitted without your action
-- See our full [Privacy Policy](https://www.captur.academy/privacy)
+### Build commands
+- `pnpm dev` - Watch mode (development)
+- `pnpm build` - Production build
+- `pnpm test` - Run tests
+- `pnpm test:ui` - Run tests with UI
 
-## Support
+## Key Files
 
-- **Issues**: Report bugs at GitHub
-- **Email**: support@captur.academy
-- **Website**: [captur.academy](https://www.captur.academy/)
+- **`manifest.json`** - Extension configuration (permissions, scripts)
+- **`src/background/index.ts`** - Background service worker
+- **`src/content/matches/all/index.ts`** - Content script entry point
+- **`src/popup/SimplePopup.tsx`** - Popup UI
+- **`src/lib/supabase.ts`** - Supabase client setup
+- **`src/lib/auth.ts`** - Authentication utilities
 
-## Version History
+## Environment
 
-### 1.0.0 (2025-01-20)
-- Initial release
-- Context menu vocabulary capture
-- Integration with Captur web app
-- Manifest V3 compliance
+The extension connects to:
+- **Production**: `https://www.captur.academy`
+- **Local dev**: `http://localhost:5173` (web app dev server)
+
+These are configured in `manifest.json` under `externally_connectable`.
+
+## Manifest V3
+
+This extension uses Manifest V3:
+- Service worker instead of background page
+- `chrome.scripting` API for dynamic scripts
+- Promises-based Chrome APIs
+
+## Testing
+
+Run unit tests:
+```bash
+pnpm test
+```
+
+## Troubleshooting
+
+**Extension not loading?**
+- Check for errors in `chrome://extensions/`
+- Ensure `dist/` folder exists after build
+- Verify all required files are in `dist/`
+
+**Changes not showing?**
+- Click "Reload" on the extension card in `chrome://extensions/`
+- Hard refresh the webpage (Cmd+Shift+R / Ctrl+Shift+R)
+
+**Build errors?**
+- Delete `node_modules` and `dist`, then reinstall: `pnpm install`
+- Check Node.js version (requires 18+)
